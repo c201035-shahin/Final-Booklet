@@ -1,0 +1,54 @@
+.card{
+    background: white;
+    border-radius: 10px;
+    height: 400px;
+    width: 300px;
+    margin-bottom: 15px;
+    
+}
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.inside{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.inside img{
+    margin: 25px 10px 8% 8%;
+    height: auto;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.mid{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 10px;
+    background: white;
+}
+.det h2{
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 10px;
+    font-size: 20px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: between;
+    color: rgb(88, 104, 121);
+    font-weight: bold;
+}
+.prc p{
+    margin-top: -5px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: slategray;
+    display: flex;
+    align-items: flex-end;
+    justify-content: between;
+}
+

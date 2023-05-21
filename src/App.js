@@ -4,9 +4,9 @@ import Home from './Components/Pages/Home'
 import Navbar from './Components/Navbar/Navbar'
 import AboutUs from './Components/AboutUs/AboutUs'
 import FirstPage from './Components/Pages/FirstPage'
-import Childrens from './Components/Categories/Childrens'
-import LiteraryFiction from './Components/Categories/LiteraryFiction'
-import ScienceTechnology from './Components/Categories/ScienceTechnology'
+import Childrens from './Components/Categories/Childrens/Childrens'
+import LiteraryFiction from './Components/Categories/LiteraryFiction/LiteraryFiction'
+import ScienceTechnology from './Components/Categories/ScienceTechnology/ScienceTechnology'
 import CareerGrowth from './Components/Categories/CareerGrowth'
 import ReligionSpirituality from './Components/Categories/ReligionSpirituality'
 import Magazines from './Components/Categories/Magazines'
@@ -18,10 +18,12 @@ import Contact from './Components/Contact/Contact'
 import Footer from './Components/Footer/Footer'
 import Signup from './Components/Pages/Signup'
 import Signin from './Components/Pages/Signin'
+import ChildCard from './Components/Categories/Childrens/ChildCard'
+import LFCard from './Components/Categories/LiteraryFiction/LFCard'
+import STCard from './Components/Categories/ScienceTechnology/STCard'
 function App() {
   return (
     <div>
-    
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -41,7 +43,9 @@ function App() {
         <Route path="/Footer" element={<Footer />} />
         <Route path="/Signin" element={<Signin />} />
         <Route path="/Signup" element={<Signup />} />
-        
+        <Route path="/ChildCard" element={<ChildCard />} />
+        <Route path="/LFCard" element={<LFCard />} />
+        <Route path="/STCard" element={<STCard />} />
       </Routes>
     </div>
   );
